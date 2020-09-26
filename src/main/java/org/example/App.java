@@ -35,9 +35,19 @@ public class App {
                 .uri(URI.create(POST_API_URL + url))
                 .timeout(Duration.ofSeconds(2))
                 .build();
-        System.out.println("Sending request to /" + url);
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString()); // send thr request and get the response in string
-        return response;
+        //System.out.println("Sending request to /" + url);
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString()); // send the request and get the response in string
+        int status = response.statusCode();
+
+        if (status == 200)
+            return response;
+
+        else
+            System.out.println ("THE CONNECTION IS FAILED  " + status) ;
+            return response;
+
+
+
 
     }
 
