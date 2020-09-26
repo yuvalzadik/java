@@ -37,7 +37,7 @@ public class Task {
 
     @Override
     public String toString() {
-        return "Task{" +
+        return "Uncompleted Task{" +
                 ", id=" + id +
                 ", title='" + title +
                 '}';
