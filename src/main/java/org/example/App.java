@@ -190,14 +190,14 @@ public class App {
         String json = ow.writeValueAsString(userpostemials);
         System.out.println(json);*/
 
-        Scanner myObj = new Scanner(System.in);
+        /*Scanner myObj = new Scanner(System.in);
         System.out.println("Enter the minimum number of photos: ");
         short photo_input = myObj.nextShort();
 
         AlbumsPerUser albumsPerUser = getAlbums((byte) 2, photo_input);
         ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
         String json = ow.writeValueAsString(albumsPerUser);
-        System.out.println(json);
+        System.out.println(json);*/
 
 
 
